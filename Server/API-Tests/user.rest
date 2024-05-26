@@ -1,0 +1,34 @@
+//registering user 
+@host_email="lekomanyaneta18@gmail.com"
+###
+POST http://localhost:5000/api/userAuth/register
+Content-Type: application/json
+
+{
+    
+    "password": "Password@123",
+    "email":{{host_email}}
+}
+###
+//login
+###
+POST http://localhost:5000/api/userAuth/login/
+Content-Type: application/json
+
+{
+     "password": "Password@1234",
+    "email":{{host_email}}
+}
+###
+
+POST http://localhost:5000/api/userAuth/passwordRecovery/
+Content-Type: application/json
+
+{
+    "email": {{host_email}},
+    "newPassword": "Password@1234"
+}
+
+
+
+

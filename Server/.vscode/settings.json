@@ -1,0 +1,9 @@
+{
+    "terminal.explorerKind": "integrated",
+    "rest-client.environmentVariables ":{
+        "local": {
+            "host_root": "https://127.0.0.1:5000"
+        }
+    },
+    "liveServer.settings.port": 4000
+}
